@@ -1,0 +1,16 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Input x");
+        double x = keyboard.nextDouble();
+        System.out.println("Input y");
+        double y = keyboard.nextDouble();
+        double f = ((Math.sin(x) + Math.cos(y)) / (Math.cos(x) - Math.sin(y))) * Math.tan(x*y);
+        System.out.println("Result = " + f);
+    }
+}
